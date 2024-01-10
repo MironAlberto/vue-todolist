@@ -68,6 +68,9 @@ createApp({
         },
         deleteToDo(i){
             this.currentToDo.splice(i, 1);
+        },
+        switchDone(i){
+            this.currentToDo[i].done = !this.currentToDo[i].done;
         }
     }
 
